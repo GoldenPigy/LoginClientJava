@@ -1,0 +1,27 @@
+
+S
+#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
+`
+0src/main/java/org/connector/BookDBConnector.java,5\b\5b9ff2ec0fac901b9f86a69c58f42c68d2792d5e
+\
+,src/main/java/org/connector/DBConnector.java,8\e\8eed431dec68aa76afb6ea67e05d2b6ab8c6d669
+Å
+Q.idea/sonarlint/securityhotspotstore/8/e/8eed431dec68aa76afb6ea67e05d2b6ab8c6d669,d\1\d138833c8c5816a46b299e758b66b8aa80db8a7d
+T
+$.idea/modules/LibraryClient.main.iml,e\7\e775a729a1bd95b0e14ac218b11b5efe3377ab8f
+O
+.idea/modules/LibraryClient.iml,4\7\479672af03b8dd32d7bc9fc6b87371906a968421
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+Å
+Q.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b,a\b\abe25e851ee828e40a94fcb1c1be6f78ff7a04cf
+Å
+Q.idea/sonarlint/securityhotspotstore/5/b/5b9ff2ec0fac901b9f86a69c58f42c68d2792d5e,0\4\0416a66c1e9f970157a767862caac417268966c4
+T
+$.idea/modules/LibraryClient.test.iml,a\8\a88b959517be2fdadd4178af266a0036f6de9f1a
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+b
+2src/main/java/org/connector/MemberDBConnector.java,b\0\b0707b914d18db4e473ef76669f17be52dd83c01
+S
+#src/main/java/org/ui/ClientGUI.java,1\1\111c17c61c156c81c149d761b5899f981848f498

@@ -1,0 +1,9 @@
+
+|
+java:S1488"fImmediately return this expression instead of assigning it to the temporary variable "responseString".(‘°££
+[
+java:S1854"@Remove this useless assignment to local variable "responseCode".(ÇÇ”ıÿÿÿÿ
+A
+java:S1874"+Remove this use of "URL"; it is deprecated.(Ğåşò
+L
+java:S1481"1Remove this unused "responseCode" local variable.(ÇÇ”ıÿÿÿÿ

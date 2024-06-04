@@ -1,0 +1,30 @@
+
+c
+java:S11928"FDefine a constant instead of duplicating this literal "error" 3 times.(öØÈ¢8ÜÅùÅ1
+j
+java:S1192A"MDefine a constant instead of duplicating this literal "please login" 3 times.(£öİ›8ÛÅùÅ1
+g
+java:S11920"JDefine a constant instead of duplicating this literal "publisher" 3 times.(ÏéÉñ8ÜÅùÅ1
+i
+java:S1192/"GDefine a constant instead of duplicating this literal "writer" 3 times.(‡’é©ÿÿÿÿÿ8ÜÅùÅ1
+K
+java:S1940")Use the opposite operator ("!=") instead.(ä¤¹×øÿÿÿÿ8ÆùÅ1
+G	java:S1064"+Replace this use of System.out by a logger.(ˆƒ¥Ù8­ÆùÅ1
+G	java:S1068"+Replace this use of System.out by a logger.(öØÈ¢8®ÆùÅ1
+C
+java:S11689"&Return an empty array instead of null.(¥¹ï8®ÆùÅ1
+C
+java:S1168b"&Return an empty array instead of null.(¥¹ï8±ÆùÅ1
+G	java:S106d"+Replace this use of System.out by a logger.(îõë§8²ÆùÅ1
+G	java:S106z"+Replace this use of System.out by a logger.(öØÈ¢8µÆùÅ1
+C
+java:S1168{"&Return an empty array instead of null.(¥¹ï8µÆùÅ1
+M	java:S106‚"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ8·ÆùÅ1
+M	java:S106‡"+Replace this use of System.out by a logger.(ú”¯şÿÿÿÿ8¹ÆùÅ1
+H	java:S106˜"+Replace this use of System.out by a logger.(öØÈ¢8¼ÆùÅ1
+D
+java:S1168™"&Return an empty array instead of null.(¥¹ï8½ÆùÅ1
+q
+java:S1128"ORemove this unused import 'com.fasterxml.jackson.core.JsonProcessingException'.(ßÔïÇûÿÿÿÿ8‘¢êæ÷1
+T
+java:S1128"7Remove this unused import 'java.net.HttpURLConnection'.(¬¬˜­8‘¢êæ÷1
