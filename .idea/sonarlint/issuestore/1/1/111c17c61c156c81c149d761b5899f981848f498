@@ -1,66 +1,27 @@
 
-	java:S112Ÿ"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8½êÓİ÷1J$d4b011a4-9847-4645-91eb-4cc92fe26286
-	java:S112Ã"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8½êÓİ÷1J$055d8809-046b-4775-8e7f-9fa22166a84e
-	java:S112ç"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8½êÓİ÷1J$9ee8e3f9-b02c-402c-bea3-adef4f46b374
-“
-java:S1192S"KDefine a constant instead of duplicating this literal "Main Menu" 11 times.(ıª§¦ıÿÿÿÿ8ÀêÓİ÷1J$1bb20094-5402-4325-bb52-cb4b37737785
-
-java:S1192w"FDefine a constant instead of duplicating this literal "Arial" 3 times.(èş…—ùÿÿÿÿ8ÀêÓİ÷1J$0b40dabe-8517-4726-8258-7e9fe2f0ecfd
-i
-java:S1170"!Make this final field static too.(ô‚°™ûÿÿÿÿ8ŞêÓİ÷1J$a5cdcab5-42c8-4346-87f4-e9b143648ce8
-i
-java:S1170"!Make this final field static too.(©–ş…øÿÿÿÿ8ŞêÓİ÷1J$66a18ed2-cf1f-4b34-9caa-78ac059beb41
+’
+java:S1192*"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8ÀêÓİ÷1J$25a20212-cc1a-47b7-aa90-85ea95900141
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8äÊÿ½ş1J$41cf5c94-e166-4fec-aef8-833a24bcb275
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8äÊÿ½ş1J$2acab60d-a9e9-41d8-808f-5e7b26dd43f9
 Ä
-java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8ŞêÓİ÷1J$b4bf8fa2-8746-47ca-ab3c-10e744c06cbb
+java:S1186¿"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8ŞêÓİ÷1J$f4619149-f351-46c0-878b-87959659fee0
 Å
-java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8ŞêÓİ÷1J$bdb0b140-f0a5-439a-96c3-42618dfa9bb9
-s
-java:S1948"+Make "connector" transient or serializable.(µÙ¬Şøÿÿÿÿ8àêÓİ÷1J$79d0339f-4737-4390-aa92-8a9b15fd4711
-t
-java:S1948"1Make "memberConnector" transient or serializable.(™¬Ù°8àêÓİ÷1J$c1072b2a-2474-4918-9836-55e666b6d20f
+java:S1186Ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8ŞêÓİ÷1J$e021f004-d179-4660-9071-7bb0a46966f8
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8ëÊÿ½ş1J$15488d7c-944b-47ec-84a9-46881c515b53
+ˆ
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8ëÊÿ½ş1J$171dd557-a6d7-41f4-98ae-3d05d006aeb1
 ‘
-java:S3252#"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ãêÓİ÷1J$7d8551fc-7119-4ee8-ae33-e436aeb7f250
-~	java:S1254"<This block of commented-out lines of code should be removed.(èÇ¸˜8åêÓİ÷1J$ffce1a8c-58c0-45f2-82da-e61f151096b1
-ƒ	java:S125B"<This block of commented-out lines of code should be removed.(ìÂ‡ûÿÿÿÿ8åêÓİ÷1J$e559badc-8c48-408e-9c3e-3548e74ed3e5
-ƒ	java:S125V"<This block of commented-out lines of code should be removed.(şö‘§ıÿÿÿÿ8åêÓİ÷1J$346f802d-ece4-4292-a1a5-d3f724f677f4
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ãêÓİ÷1J$3e4480ca-b46b-45eb-b8e1-59e68dfb7f73
+o
+java:S1602b",Remove useless curly braces around statement(çúöÑ8ëêÓİ÷1J$f3231adf-a46e-4ef7-a51a-ba329751ec14
+„	java:S125±"<This block of commented-out lines of code should be removed.(Š‹İåøÿÿÿÿ8­úˆ¾ş1J$d65d5ab0-eae2-4f0b-9fd0-8f18c1240190
 p
-java:S1602›",Remove useless curly braces around statement(çúöÑ8ëêÓİ÷1J$be270737-24a8-42a8-b1e2-d9e66780cde6
-„	java:S125ê"<This block of commented-out lines of code should be removed.(Š‹İåøÿÿÿÿ8ïêÓİ÷1J$4a0bdc04-bdca-4bf9-80e5-1a34f84fffb6
-p
-java:S1602ğ",Remove useless curly braces around statement(çúöÑ8ïêÓİ÷1J$2fde7b2a-d6d1-4f5b-afd1-e4342c08ad67
-p
-java:S1602¤",Remove useless curly braces around statement(çúöÑ8òêÓİ÷1J$e32fe41a-fdd8-436d-8a8a-cc4d3c090406
-p
-java:S1602È",Remove useless curly braces around statement(çúöÑ8óêÓİ÷1J$4eefcc72-49c2-4076-a689-2e0697793e81
-p
-java:S1602ì",Remove useless curly braces around statement(çúöÑ8õêÓİ÷1J$a69026b0-6cf9-40f2-9018-1e4dfc2a9678
-	java:S125ö"<This block of commented-out lines of code should be removed.(ÜõÚ“8öêÓİ÷1J$c7efa0d1-9059-449f-8dd0-b70cdda49df2
-p
-java:S1602†",Remove useless curly braces around statement(çúöÑ8öêÓİ÷1J$ac42cf7c-cee0-4eac-8bb3-cc53d93e72dd
-p
-java:S1602¾",Remove useless curly braces around statement(çúöÑ8øêÓİ÷1J$ba671430-bcad-494d-aa14-b762f16f9402
-p
-java:S1602Ô",Remove useless curly braces around statement(çúöÑ8ùêÓİ÷1J$cfcdc80c-c296-4f8f-82ff-63352fa89edf
-r
-java:S1940‚")Use the opposite operator ("!=") instead.(¿ÒÚ¸ûÿÿÿÿ8ıêÓİ÷1J$cef631d6-a796-4b7b-bed1-64585746f5aa
-r
-java:S1940‹")Use the opposite operator ("!=") instead.(¿ÒÚ¸ûÿÿÿÿ8ıêÓİ÷1J$12307b7e-0282-4a3e-bbd1-0f6c74c3aaa5
+java:S1602·",Remove useless curly braces around statement(çúöÑ8­úˆ¾ş1J$2ed904de-d497-4685-8847-3487c20ccd4e
 …
-java:S1854¬"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8ÿêÓİ÷1J$1e4c7452-e7af-4115-8944-4d1522b82e60
+java:S1854Ë"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8±úˆ¾ş1J$775f710c-c322-46e4-aab5-43e21043172e
 v
-java:S1481¬"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8ÿêÓİ÷1J$a8efd5fa-5ac7-459c-9da5-85757b496492
-	java:S125­"<This block of commented-out lines of code should be removed.(ĞÅîÌ8ÿêÓİ÷1J$3ca32ce8-a925-4362-bdd1-dbdd9df3f981
+java:S1481Ë"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8²úˆ¾ş1J$7a1c8fd6-2860-4f24-8fd8-1593cf55f101
+	java:S125Ì"<This block of commented-out lines of code should be removed.(ĞÅîÌ8²úˆ¾ş1J$cdc24172-0b6f-4c98-aa56-6c1e8404f414
 €
-java:S6353Ü"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8ëÓİ÷1J$02fe028e-7867-4303-a15a-ee89f6c7bd2a
-z
-java:S1144÷"6Remove this unused private "createSearchPanel" method.(„Å˜Ÿ8ƒëÓİ÷1J$e3d6aadf-fdbd-49e5-9f8e-8450f5010852
-
-java:S1144¬"6Remove this unused private "createBorrowPanel" method.(ÂË‹úÿÿÿÿ8ƒëÓİ÷1J$96afbb9c-4e81-4d23-8104-9467a8d4b7af
-
-java:S1144Ï"6Remove this unused private "createReturnPanel" method.(“óŠóùÿÿÿÿ8ƒëÓİ÷1J$d579450e-8275-4584-b240-b51728f42848
-|
-java:S1144ò"8Remove this unused private "createCheckoutPanel" method.(âÿÅ8ƒëÓİ÷1J$efaeb3c2-a816-4ad4-8d4f-8cd65a702329
-{
-java:S1144"7Remove this unused private "createRequestPanel" method.(Ÿè¡Ñ8ƒëÓİ÷1J$341d5011-6734-4744-aabd-22c4382e8df4
-…
-java:S1144Ä"<Remove this unused private "createBestBookListPanel" method.(ÕÜ«ßüÿÿÿÿ8ƒëÓİ÷1J$47d5dacc-0d00-4e52-823a-531158745eae
+java:S6353û"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8´úˆ¾ş1J$ddaa5dcc-0f2f-4fb9-9190-5e3b93a1b236

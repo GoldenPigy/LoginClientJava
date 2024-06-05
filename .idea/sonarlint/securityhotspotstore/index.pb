@@ -25,3 +25,8 @@ b
 2src/main/java/org/connector/MemberDBConnector.java,b\0\b0707b914d18db4e473ef76669f17be52dd83c01
 S
 #src/main/java/org/ui/ClientGUI.java,1\1\111c17c61c156c81c149d761b5899f981848f498
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+P
+ src/main/java/org/main/Main.java,9\a\9a071070665c16708a3300cc5eaa3efd9c9eb06f
