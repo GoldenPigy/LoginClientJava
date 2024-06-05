@@ -1,5 +1,7 @@
 package org.request;
 
+import org.util.Hash;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -12,49 +14,19 @@ public class EmailRequest {
     // getEmail, setEmail 관련 POST 리퀘스트 구현
 
     public String getEmail() throws IOException {
-        URL url = new URL("http://[서버 주소]/getEmail"); // 서버 주소 입력
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-        connection.setRequestMethod("POST"); // POST 방식으로 설정
+        String urlParameters = ""; // 서버에 전송할 파라미터
+        String urlString = "https://localhost:8443/users/getEmail";
+        HttpsRequest request = new HttpsRequest();
 
-        int responseCode = connection.getResponseCode();
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        String inputLine;
-        StringBuilder response = new StringBuilder();
-
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        in.close();
-
-        return "Your Email: " + response.toString(); // 서버 응답 반환
+        return "Your Email: " + request.requestHttps(urlString,urlParameters); // 서버 응답 반환
     }
 
     public String setEmail(String email) throws IOException {
-        String urlParameters = "email=" + email; // 파라미터 생성
-        byte[] postData = urlParameters.getBytes("UTF-8"); // 파라미터 인코딩
-
-        URL url = new URL("http://[서버 주소]/setEmail"); // 서버 주소 입력
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-        connection.setDoOutput(true);
-        connection.setRequestMethod("POST");
-        connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-        connection.setRequestProperty("Content-Length", Integer.toString(postData.length));
-
-        DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
-        wr.write(postData);
-        wr.flush();
-        wr.close();
-
-        int responseCode = connection.getResponseCode();
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        String inputLine;
-        StringBuilder response = new StringBuilder();
-
-        while ((inputLine = in.readLine()) != null) {
-            response.append(inputLine);
-        }
-        in.close();
-
-        return response.toString(); // 서버 응답 반환
+        Hash hash = new Hash();
+        String hashedEmail = hash.getSHA256Hash(email);
+        String urlParameters = "email=" + email + "&hashedEmail=" + hashedEmail; // 파라미터 생성
+        String urlString = "https://localhost:8443/users/setEmail";
+        HttpsRequest request = new HttpsRequest();
+        return request.requestHttps(urlString,urlParameters); // 서버 응답 반환
     }
 }
