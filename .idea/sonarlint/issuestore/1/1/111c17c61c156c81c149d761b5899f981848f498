@@ -1,27 +1,26 @@
 
 ’
-java:S1192*"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8ÀêÓİ÷1J$25a20212-cc1a-47b7-aa90-85ea95900141
-¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8äÊÿ½ş1J$41cf5c94-e166-4fec-aef8-833a24bcb275
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8äÊÿ½ş1J$2acab60d-a9e9-41d8-808f-5e7b26dd43f9
+java:S1192/"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8Ì«ùÀş1J$444b82cb-3fc8-48ae-b259-1d2db21c5f3c
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8ã«ùÀş1J$65a71acb-95c8-4fde-a707-ebf5441451f5
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8ã«ùÀş1J$b87ca2b8-b54a-4f90-b333-8824de5e5496
 Ä
-java:S1186¿"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8ŞêÓİ÷1J$f4619149-f351-46c0-878b-87959659fee0
+java:S1186ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8å«ùÀş1J$8b083460-e720-4a85-84fc-6a4c87bb67fa
 Å
-java:S1186Ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8ŞêÓİ÷1J$e021f004-d179-4660-9071-7bb0a46966f8
+java:S1186é"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8å«ùÀş1J$650731b4-bd7f-44ca-8e32-2580331cab7c
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8ëÊÿ½ş1J$15488d7c-944b-47ec-84a9-46881c515b53
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8è«ùÀş1J$a5bd7bfd-af2c-4203-b31f-91b0fb8dd55b
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8ëÊÿ½ş1J$171dd557-a6d7-41f4-98ae-3d05d006aeb1
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8è«ùÀş1J$20c52bf3-7686-449b-8519-e693d6d9a5cc
 ‘
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ãêÓİ÷1J$3e4480ca-b46b-45eb-b8e1-59e68dfb7f73
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8é«ùÀş1J$3e08dba7-689d-4569-9778-91f097457f72
 o
-java:S1602b",Remove useless curly braces around statement(çúöÑ8ëêÓİ÷1J$f3231adf-a46e-4ef7-a51a-ba329751ec14
-„	java:S125±"<This block of commented-out lines of code should be removed.(Š‹İåøÿÿÿÿ8­úˆ¾ş1J$d65d5ab0-eae2-4f0b-9fd0-8f18c1240190
+java:S1602n",Remove useless curly braces around statement(çúöÑ8ï«ùÀş1J$082e666a-5388-436d-ab2a-3deff042e3d9
 p
-java:S1602·",Remove useless curly braces around statement(çúöÑ8­úˆ¾ş1J$2ed904de-d497-4685-8847-3487c20ccd4e
+java:S1602À",Remove useless curly braces around statement(çúöÑ8ó«ùÀş1J$228fe602-906b-417d-a9ae-9b74b7eda617
 …
-java:S1854Ë"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8±úˆ¾ş1J$775f710c-c322-46e4-aab5-43e21043172e
+java:S1854ğ"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8ù«ùÀş1J$65d342b0-825e-48d2-8725-97ffba9c5dc1
 v
-java:S1481Ë"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8²úˆ¾ş1J$7a1c8fd6-2860-4f24-8fd8-1593cf55f101
-	java:S125Ì"<This block of commented-out lines of code should be removed.(ĞÅîÌ8²úˆ¾ş1J$cdc24172-0b6f-4c98-aa56-6c1e8404f414
+java:S1481ğ"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8ù«ùÀş1J$44fe07e8-3c7d-4953-a9be-25edd34c43df
+	java:S125ñ"<This block of commented-out lines of code should be removed.(ĞÅîÌ8ú«ùÀş1J$d9c2521e-0c72-4ff9-9c58-883fee545dde
 €
-java:S6353û"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8´úˆ¾ş1J$ddaa5dcc-0f2f-4fb9-9190-5e3b93a1b236
+java:S6353¢"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8û«ùÀş1J$f5a8df67-0c51-4162-bc8a-14afa9a90922

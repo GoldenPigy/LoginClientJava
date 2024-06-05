@@ -30,3 +30,9 @@ S
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 P
  src/main/java/org/main/Main.java,9\a\9a071070665c16708a3300cc5eaa3efd9c9eb06f
+[
++src/main/java/org/request/LoginRequest.java,6\2\626260c23ad4363796beec65a50b435d75f17136
+^
+.src/main/java/org/request/RegisterRequest.java,f\9\f9178107f3ca6b99193940fca32ca3654969c3db
+[
++src/main/java/org/request/EmailRequest.java,b\1\b1cb517f90a1d5bed3d2324c7d01f4a1a66203d5

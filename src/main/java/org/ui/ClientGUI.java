@@ -5,6 +5,7 @@ import java.awt.*;
 import java.util.regex.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import org.request.*;
 
 public class ClientGUI extends JFrame implements KeyListener{
     private CardLayout cardLayout;
@@ -28,9 +29,13 @@ public class ClientGUI extends JFrame implements KeyListener{
         JPanel mainMenuPanel = new JPanel();
         JButton loginButton = new JButton("로그인");
         JButton registerButton = new JButton("회원가입");
+        JButton setEmailButton = new JButton("이메일 설정");
+        JButton getEmailButton = new JButton("이메일 확인");
 
         mainMenuPanel.add(loginButton);
         mainMenuPanel.add(registerButton);
+        mainMenuPanel.add(setEmailButton);
+        mainMenuPanel.add(getEmailButton);
 
         // 로그인 패널
         JPanel loginPanel = createLoginPanel();
@@ -46,6 +51,8 @@ public class ClientGUI extends JFrame implements KeyListener{
         // 버튼 이벤트 리스너
         loginButton.addActionListener(e -> cardLayout.show(cardPanel, "Login"));
         registerButton.addActionListener(e -> cardLayout.show(cardPanel, "Register"));
+        setEmailButton.addActionListener(e -> setEmailPane());
+        getEmailButton.addActionListener(e -> getEmailPane());
 
         add(cardPanel);
         setVisible(true);
@@ -86,12 +93,17 @@ public class ClientGUI extends JFrame implements KeyListener{
         loginButton.addActionListener(e -> {
             String id = idField.getText();
             String pw = new String(passwordField.getPassword());
-            if(id.length() < 5  || id.length() > 15 || pw.length() < 5 || pw.length() > 15){
+
+            if (id.length() < 5 || id.length() > 15 || pw.length() < 5 || pw.length() > 15) {
                 JOptionPane.showMessageDialog(this, "Input must be 5 to 15 characters.");
-            }
-            else {
-                String loginResult = "Error";
-                JOptionPane.showMessageDialog(this, loginResult);
+                //특수문자 체크
+            } else if (containsSpecialChars(id) || containsSpecialChars(pw)) {
+                JOptionPane.showMessageDialog(this, "Input contains invalid characters.");
+            } else {
+
+                LoginRequest request = new LoginRequest();
+                String result = request.login(id,pw);
+                JOptionPane.showMessageDialog(this, result);
             }
         });
 
@@ -102,18 +114,19 @@ public class ClientGUI extends JFrame implements KeyListener{
         return loginPanel;
     }
 
+
     private JPanel createRegisterPanel() {
         JPanel registerPanel = new JPanel();
         registerPanel.setLayout(new BorderLayout());
         registerPanel.setBorder(BorderFactory
                 .createEmptyBorder(screenHeight / 3, screenWidth / 4, screenHeight / 3, screenWidth / 4));
 
-        // 로그인 타이틀
+        // 회원가입 타이틀
         JLabel titleLabel = new JLabel("Sign Up", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 20));
         registerPanel.add(titleLabel, BorderLayout.NORTH);
 
-        // ID와 Password 입력 필드
+        // 입력 필드
         JPanel fieldsPanel = new JPanel(new GridLayout(5, 2, 10, 10));
         JLabel nameLabel = new JLabel("Name:");
         JTextField nameField = new JTextField(10);
@@ -157,26 +170,22 @@ public class ClientGUI extends JFrame implements KeyListener{
             String rpw = new String(recPasswordField.getPassword());
             updateStrengthLabel(checkPasswordStrength(pw), pwStrengthLabel);
 
-            if(name.length() < 5 || name.length() > 10 || id.length() < 5  || id.length() > 15 || pw.length() < 5 || pw.length() > 15){
+            if (name.length() < 5 || name.length() > 10 || id.length() < 5 || id.length() > 15 || pw.length() < 5 || pw.length() > 15) {
                 JOptionPane.showMessageDialog(this, "Input must be 5 to 15 characters.");
-            }
-
-            else if (id.equals(pw)) {
+            } else if (containsSpecialChars(name) || containsSpecialChars(email) || containsSpecialChars(id) || containsSpecialChars(pw)) {
+                JOptionPane.showMessageDialog(this, "Input contains invalid characters.");
+            } else if (id.equals(pw)) {
                 JOptionPane.showMessageDialog(this, "ID and password can't be same.");
-            }
-
-            else if (!pw.equals(rpw)) {
+            } else if (!pw.equals(rpw)) {
                 JOptionPane.showMessageDialog(this, "Password does not match.");
-            }
-
-            else if (!email.contains("@")) {
+            } else if (!email.contains("@")) {
                 JOptionPane.showMessageDialog(this, "E-mail format is incorrect.");
-            }
+            } else {
 
-            else {
-                /*String registerResult = memberConnector.joinMemeberRequest(id, pw, name);
-                JOptionPane.showMessageDialog(this, registerResult);*/
-                JOptionPane.showMessageDialog(this, "Registered Successfully!");
+                //여기다 회원가입 관련 요청 매핑
+                RegisterRequest request = new RegisterRequest();
+                String result = request.register(id,pw,email);
+                JOptionPane.showMessageDialog(this, result);
             }
         });
 
@@ -185,6 +194,34 @@ public class ClientGUI extends JFrame implements KeyListener{
         });
 
         return registerPanel;
+    }
+
+    private void setEmailPane() {
+        String email = JOptionPane.showInputDialog(this, "Reset Your Email:");
+        if (email != null) { // If user presses OK
+            if (email.equalsIgnoreCase("")) {
+                JOptionPane.showMessageDialog(this, "Input Something");
+            } else if (!email.contains("@")) {
+                JOptionPane.showMessageDialog(this, "E-mail format is incorrect.");
+            } else {
+                EmailRequest request = new EmailRequest();
+                String result = request.setEmail(email);
+                JOptionPane.showMessageDialog(this, result);
+            }
+        }
+    }
+
+    private void getEmailPane() {
+        EmailRequest request = new EmailRequest();
+        String result = request.loadEmail();
+        String email = request.getEmail();
+        JOptionPane.showMessageDialog(this, email + ' ' + result);
+    }
+
+    // 특수 문자 검사 함수
+    private boolean containsSpecialChars(String input) {
+        String specialChars = "['\";=]";
+        return input.matches(".*" + specialChars + ".*");
     }
 
     @Override
@@ -204,6 +241,7 @@ public class ClientGUI extends JFrame implements KeyListener{
         //updateStrengthLabel(strength);
     }
 
+    //비밀번호 강도 표시
     public void updateStrengthLabel(int strength, JLabel strengthLabel) {
         String strengthStr;
         Color color = switch (strength) {
@@ -229,6 +267,7 @@ public class ClientGUI extends JFrame implements KeyListener{
         strengthLabel.setForeground(color);
     }
 
+    //비밀번호 강도 체크
     public static int checkPasswordStrength(String password) {
         int strength = 0;
 
@@ -265,6 +304,7 @@ public class ClientGUI extends JFrame implements KeyListener{
         return strength;
     }
 
+    //문자열 반복 체크
     private static boolean hasRepeatingSubstring(String str) {
         for (int i = 0; i < str.length() - 1; i++) {
             String substr = str.substring(i, i + 2);
