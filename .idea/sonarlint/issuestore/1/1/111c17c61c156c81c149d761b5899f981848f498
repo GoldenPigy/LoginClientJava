@@ -1,26 +1,30 @@
 
 ’
-java:S1192/"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8Ì«ùÀş1J$444b82cb-3fc8-48ae-b259-1d2db21c5f3c
-¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8ã«ùÀş1J$65a71acb-95c8-4fde-a707-ebf5441451f5
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8ã«ùÀş1J$b87ca2b8-b54a-4f90-b333-8824de5e5496
+java:S11922"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8Ö¯ÚÁş1J$acf478f8-4e53-4c32-aee3-724167e3506f
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8ì¯ÚÁş1J$0b3c8498-07a1-4d6f-8fc3-40f44f656c43
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8ì¯ÚÁş1J$db456af0-bafd-4c50-a209-6236d93743aa
 Ä
-java:S1186ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8å«ùÀş1J$8b083460-e720-4a85-84fc-6a4c87bb67fa
+java:S1186æ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8î¯ÚÁş1J$1e2d880c-02b6-4d5d-8f37-3222aea9646e
 Å
-java:S1186é"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8å«ùÀş1J$650731b4-bd7f-44ca-8e32-2580331cab7c
+java:S1186ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8î¯ÚÁş1J$2914a432-5934-48d6-9a87-f04d29be9154
+l
+java:S1948"$Make "er" transient or serializable.(¨³¨¾úÿÿÿÿ8ï¯ÚÁş1J$3b46ea9e-3bd6-4a59-a7c4-bddd5bd7dae3
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8è«ùÀş1J$a5bd7bfd-af2c-4203-b31f-91b0fb8dd55b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8ñ¯ÚÁş1J$9f4e3bfe-57fa-48d6-bb41-25c83b508efa
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8è«ùÀş1J$20c52bf3-7686-449b-8519-e693d6d9a5cc
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8ñ¯ÚÁş1J$6615ab31-e466-471f-92bf-a48e539fb37e
 ‘
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8é«ùÀş1J$3e08dba7-689d-4569-9778-91f097457f72
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ò¯ÚÁş1J$1b873761-ea37-468d-8870-fb366acb1b76
 o
-java:S1602n",Remove useless curly braces around statement(çúöÑ8ï«ùÀş1J$082e666a-5388-436d-ab2a-3deff042e3d9
+java:S1602q",Remove useless curly braces around statement(çúöÑ8ø¯ÚÁş1J$c6b1ba7d-097f-4005-b1f4-eb80f2cb92ef
 p
-java:S1602À",Remove useless curly braces around statement(çúöÑ8ó«ùÀş1J$228fe602-906b-417d-a9ae-9b74b7eda617
+java:S1602Ã",Remove useless curly braces around statement(çúöÑ8ü¯ÚÁş1J$63676ec6-52bd-4605-a2ca-cf3734aeff78
+„	java:S125Ò"<This block of commented-out lines of code should be removed.(×ÒŞ®üÿÿÿÿ8ÀÛÁş1J$6e9b959f-7536-4b19-a1fb-a77051562d11
+„	java:S125Ú"<This block of commented-out lines of code should be removed.(×ÒŞ®üÿÿÿÿ8ÖÜÁş1J$9747fa5a-2029-481b-a716-cf0ad468988f
 …
-java:S1854ğ"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8ù«ùÀş1J$65d342b0-825e-48d2-8725-97ffba9c5dc1
+java:S1854ò"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8ÿ¯ÚÁş1J$100a7f4f-85e7-4c77-a499-5bb84267e899
 v
-java:S1481ğ"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8ù«ùÀş1J$44fe07e8-3c7d-4953-a9be-25edd34c43df
-	java:S125ñ"<This block of commented-out lines of code should be removed.(ĞÅîÌ8ú«ùÀş1J$d9c2521e-0c72-4ff9-9c58-883fee545dde
+java:S1481ò"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8€°ÚÁş1J$4bda1d6d-4631-4c09-835d-e0024bb4d9ea
+	java:S125ó"<This block of commented-out lines of code should be removed.(ĞÅîÌ8€°ÚÁş1J$1cf5a83a-de76-4541-bf65-183129b3755d
 €
-java:S6353¢"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8û«ùÀş1J$f5a8df67-0c51-4162-bc8a-14afa9a90922
+java:S6353¤"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8‚°ÚÁş1J$d1a05eeb-d25f-42ad-8bfd-6eb9216b8ea2

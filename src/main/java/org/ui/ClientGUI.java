@@ -10,11 +10,14 @@ import org.request.*;
 public class ClientGUI extends JFrame implements KeyListener{
     private CardLayout cardLayout;
     private JPanel cardPanel;
+
+    private EmailRequest er;
     private final static int screenWidth = 1200;
     private final static int screenHeight = 800;
 
     public ClientGUI() {
         initialize();
+        er = new EmailRequest();
     }
 
     private void initialize() {
@@ -204,18 +207,17 @@ public class ClientGUI extends JFrame implements KeyListener{
             } else if (!email.contains("@")) {
                 JOptionPane.showMessageDialog(this, "E-mail format is incorrect.");
             } else {
-                EmailRequest request = new EmailRequest();
-                String result = request.setEmail(email);
+                //EmailRequest request = new EmailRequest();
+                String result = er.setEmail(email);
                 JOptionPane.showMessageDialog(this, result);
             }
         }
     }
 
     private void getEmailPane() {
-        EmailRequest request = new EmailRequest();
-        String result = request.loadEmail();
-        String email = request.getEmail();
-        JOptionPane.showMessageDialog(this, email + ' ' + result);
+        //EmailRequest request = new EmailRequest();
+        String email = er.getEmail();
+        JOptionPane.showMessageDialog(this, email);
     }
 
     // 특수 문자 검사 함수
