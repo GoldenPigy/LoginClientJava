@@ -1,10 +1,4 @@
 
-S
-#src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
-`
-0src/main/java/org/connector/BookDBConnector.java,5\b\5b9ff2ec0fac901b9f86a69c58f42c68d2792d5e
-\
-,src/main/java/org/connector/DBConnector.java,8\e\8eed431dec68aa76afb6ea67e05d2b6ab8c6d669
 Å
 Q.idea/sonarlint/securityhotspotstore/8/e/8eed431dec68aa76afb6ea67e05d2b6ab8c6d669,d\1\d138833c8c5816a46b299e758b66b8aa80db8a7d
 T
@@ -21,8 +15,6 @@ T
 $.idea/modules/LibraryClient.test.iml,a\8\a88b959517be2fdadd4178af266a0036f6de9f1a
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-b
-2src/main/java/org/connector/MemberDBConnector.java,b\0\b0707b914d18db4e473ef76669f17be52dd83c01
 S
 #src/main/java/org/ui/ClientGUI.java,1\1\111c17c61c156c81c149d761b5899f981848f498
 :
@@ -36,3 +28,9 @@ P
 .src/main/java/org/request/RegisterRequest.java,f\9\f9178107f3ca6b99193940fca32ca3654969c3db
 [
 +src/main/java/org/request/EmailRequest.java,b\1\b1cb517f90a1d5bed3d2324c7d01f4a1a66203d5
+A
+EmailRequest.java,5\7\57b7c5a99d74d3608d67195366e890d7a7ec42c2
+A
+LoginRequest.java,a\c\ac021d7a5f0700b9f11b411e931b81772a4fd85e
+D
+RegisterRequest.java,5\c\5c20c1fb5ab414f5b68154f941d1dadf9c9d932e

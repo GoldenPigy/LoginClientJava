@@ -1,23 +1,60 @@
 package org.request;
 
+import java.io.BufferedReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 public class EmailRequest {
 
-    //getEmail, setEmail 관련 POST 리퀘스트 구현
+    // getEmail, setEmail 관련 POST 리퀘스트 구현
 
-    public String getEmail() {
-        //이메일 정보를 백에서 받아와 email 변수에 대입하고 성공했다면 success를 리턴
-        //세션유지가 되기에 따로 입력값은 필요 없음
-        //getEmail 요청 사용
-        String result = "example@jbnu.ac.kr"; // "example@jbnu.ac.kr" 대신에 받아온 result값을 출력
-        return "Your Email: " + result;
+    public String getEmail() throws IOException {
+        URL url = new URL("http://[서버 주소]/getEmail"); // 서버 주소 입력
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("POST"); // POST 방식으로 설정
+
+        int responseCode = connection.getResponseCode();
+        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        String inputLine;
+        StringBuilder response = new StringBuilder();
+
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+        }
+        in.close();
+
+        return "Your Email: " + response.toString(); // 서버 응답 반환
     }
 
-    public String setEmail(String email) {
-        //유저에게서 받은 email 스트링을 백으로 보내고 result값을 받아옴
-        //이후 클래스 속성에 대입
-        //setEmail 요청 사용
-        String result = "success"; // "success" 대신 받아온 result값을 출력
-        return result;
-    }
+    public String setEmail(String email) throws IOException {
+        String urlParameters = "email=" + email; // 파라미터 생성
+        byte[] postData = urlParameters.getBytes("UTF-8"); // 파라미터 인코딩
 
+        URL url = new URL("http://[서버 주소]/setEmail"); // 서버 주소 입력
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setDoOutput(true);
+        connection.setRequestMethod("POST");
+        connection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+        connection.setRequestProperty("Content-Length", Integer.toString(postData.length));
+
+        DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
+        wr.write(postData);
+        wr.flush();
+        wr.close();
+
+        int responseCode = connection.getResponseCode();
+        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        String inputLine;
+        StringBuilder response = new StringBuilder();
+
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+        }
+        in.close();
+
+        return response.toString(); // 서버 응답 반환
+    }
 }

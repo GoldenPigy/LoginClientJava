@@ -2,6 +2,7 @@ package org.ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
 import java.util.regex.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -54,8 +55,20 @@ public class ClientGUI extends JFrame implements KeyListener{
         // 버튼 이벤트 리스너
         loginButton.addActionListener(e -> cardLayout.show(cardPanel, "Login"));
         registerButton.addActionListener(e -> cardLayout.show(cardPanel, "Register"));
-        setEmailButton.addActionListener(e -> setEmailPane());
-        getEmailButton.addActionListener(e -> getEmailPane());
+        setEmailButton.addActionListener(e -> {
+            try {
+                setEmailPane();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+        getEmailButton.addActionListener(e -> {
+            try {
+                getEmailPane();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
 
         add(cardPanel);
         setVisible(true);
@@ -105,7 +118,12 @@ public class ClientGUI extends JFrame implements KeyListener{
             } else {
 
                 LoginRequest request = new LoginRequest();
-                String result = request.login(id,pw);
+                String result = null;
+                try {
+                    result = request.login(id,pw);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
                 JOptionPane.showMessageDialog(this, result);
             }
         });
@@ -187,7 +205,12 @@ public class ClientGUI extends JFrame implements KeyListener{
 
                 //여기다 회원가입 관련 요청 매핑
                 RegisterRequest request = new RegisterRequest();
-                String result = request.register(id,pw,email);
+                String result = null;
+                try {
+                    result = request.register(id,pw,email);
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
                 JOptionPane.showMessageDialog(this, result);
             }
         });
@@ -199,7 +222,7 @@ public class ClientGUI extends JFrame implements KeyListener{
         return registerPanel;
     }
 
-    private void setEmailPane() {
+    private void setEmailPane() throws IOException {
         String email = JOptionPane.showInputDialog(this, "Reset Your Email:");
         if (email != null) { // If user presses OK
             if (email.equalsIgnoreCase("")) {
@@ -214,7 +237,7 @@ public class ClientGUI extends JFrame implements KeyListener{
         }
     }
 
-    private void getEmailPane() {
+    private void getEmailPane() throws IOException {
         //EmailRequest request = new EmailRequest();
         String email = er.getEmail();
         JOptionPane.showMessageDialog(this, email);

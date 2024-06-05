@@ -1,30 +1,34 @@
 
+	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8Óˆ½Æş1J$876c195b-136b-41ea-82db-5da661f0e6b3
+	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8°î¾Æş1J$d7e6638f-622e-49f8-8969-b3b879e35ba6
+	java:S112}"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8‹›ÀÆş1J$81841299-85e2-4443-aff1-e167476d44e2
+	java:S112Ô"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8‹›ÀÆş1J$4ccb64a4-966e-4d4c-b4f2-7d9a8e137448
 ’
-java:S11922"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8Ö¯ÚÁş1J$acf478f8-4e53-4c32-aee3-724167e3506f
-¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8ì¯ÚÁş1J$0b3c8498-07a1-4d6f-8fc3-40f44f656c43
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8ì¯ÚÁş1J$db456af0-bafd-4c50-a209-6236d93743aa
+java:S11923"JDefine a constant instead of duplicating this literal "Main Menu" 3 times.(ıª§¦ıÿÿÿÿ8Ö¯ÚÁş1J$45992e35-55be-4ba2-a169-899b79e1c2f9
+¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(à©Ê­øÿÿÿÿ8ì¯ÚÁş1J$291488b2-c433-4960-898a-a4e192c09877
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ã€Ó8ì¯ÚÁş1J$ad276af8-4a90-4947-b59a-2baef60b29b4
 Ä
-java:S1186æ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8î¯ÚÁş1J$1e2d880c-02b6-4d5d-8f37-3222aea9646e
+java:S1186ı"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8î¯ÚÁş1J$d91e494f-f5c7-476f-9027-cb73c9d0056a
 Å
-java:S1186ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8î¯ÚÁş1J$2914a432-5934-48d6-9a87-f04d29be9154
+java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8î¯ÚÁş1J$e3c2379d-3fdc-4022-9402-de966745f31a
 l
-java:S1948"$Make "er" transient or serializable.(¨³¨¾úÿÿÿÿ8ï¯ÚÁş1J$3b46ea9e-3bd6-4a59-a7c4-bddd5bd7dae3
+java:S1948"$Make "er" transient or serializable.(¨³¨¾úÿÿÿÿ8ï¯ÚÁş1J$9720e311-b1f7-4653-9112-5d3082954732
 
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8ñ¯ÚÁş1J$9f4e3bfe-57fa-48d6-bb41-25c83b508efa
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(à©Ê­øÿÿÿÿ8ñ¯ÚÁş1J$afa59bf1-26d3-4ae3-9b14-7e8e56a04045
 ˆ
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8ñ¯ÚÁş1J$6615ab31-e466-471f-92bf-a48e539fb37e
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ã€Ó8ñ¯ÚÁş1J$3b6f5974-3d6b-49d8-b364-be52f8b0da0b
 ‘
-java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ò¯ÚÁş1J$1b873761-ea37-468d-8870-fb366acb1b76
-o
-java:S1602q",Remove useless curly braces around statement(çúöÑ8ø¯ÚÁş1J$c6b1ba7d-097f-4005-b1f4-eb80f2cb92ef
+java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8ò¯ÚÁş1J$fadcb40e-74f5-4593-8a83-f0b4a0228530
 p
-java:S1602Ã",Remove useless curly braces around statement(çúöÑ8ü¯ÚÁş1J$63676ec6-52bd-4605-a2ca-cf3734aeff78
-„	java:S125Ò"<This block of commented-out lines of code should be removed.(×ÒŞ®üÿÿÿÿ8ÀÛÁş1J$6e9b959f-7536-4b19-a1fb-a77051562d11
-„	java:S125Ú"<This block of commented-out lines of code should be removed.(×ÒŞ®üÿÿÿÿ8ÖÜÁş1J$9747fa5a-2029-481b-a716-cf0ad468988f
+java:S1602ƒ",Remove useless curly braces around statement(çúöÑ8ø¯ÚÁş1J$2699ef44-311a-4c6d-b2eb-cb217a2bdfa2
+p
+java:S1602Ú",Remove useless curly braces around statement(çúöÑ8ü¯ÚÁş1J$2ac1390e-ee85-431c-8f4c-b98956dd0493
+„	java:S125é"<This block of commented-out lines of code should be removed.(×ÒŞ®üÿÿÿÿ8ÀÛÁş1J$6ab47e48-4215-4248-a596-67a28bb5a4aa
+„	java:S125ñ"<This block of commented-out lines of code should be removed.(×ÒŞ®üÿÿÿÿ8ÖÜÁş1J$38155319-9527-4c2b-8724-50c44e6bd28e
 …
-java:S1854ò"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8ÿ¯ÚÁş1J$100a7f4f-85e7-4c77-a499-5bb84267e899
+java:S1854‰"<Remove this useless assignment to local variable "strength".(Ö·Îúÿÿÿÿ8ÿ¯ÚÁş1J$e310214e-cc1e-4429-a012-fc9c7f0cc34a
 v
-java:S1481ò"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8€°ÚÁş1J$4bda1d6d-4631-4c09-835d-e0024bb4d9ea
-	java:S125ó"<This block of commented-out lines of code should be removed.(ĞÅîÌ8€°ÚÁş1J$1cf5a83a-de76-4541-bf65-183129b3755d
+java:S1481‰"-Remove this unused "strength" local variable.(Ö·Îúÿÿÿÿ8€°ÚÁş1J$4378d85c-f00c-406a-9beb-6062719df2e1
+	java:S125Š"<This block of commented-out lines of code should be removed.(ĞÅîÌ8€°ÚÁş1J$c9afb95c-34f1-416b-8aab-36c201425197
 €
-java:S6353¤"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8‚°ÚÁş1J$d1a05eeb-d25f-42ad-8bfd-6eb9216b8ea2
+java:S6353»"<Use concise character class syntax '\\d' instead of '[0-9]'.(„æßÎ8‚°ÚÁş1J$539b75e5-6424-4d06-8f7d-b55c7a34c889
